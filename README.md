@@ -234,6 +234,15 @@ For convenience, we provide model weights for 3DETR trained for different number
 ## Installation
 Our code is tested with PyTorch 1.9.0, CUDA 10.2 and Python 3.6. It may work with other versions.
 
+```sh
+conda create -n 3getr python=3.8 -y
+conda activate 3getr
+conda install -c conda-forge cudatoolkit-dev=11.4 -y
+pip install torch==1.12.1 torchvision==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install -r requirements.txt
+cd third_party/pointnet2 && python setup.py install
+```
+
 You will need to install `pointnet2` layers by running
 
 ```
@@ -250,6 +259,7 @@ plyfile
 'networkx>=2.2,<2.3'
 scipy
 ```
+
 
 Some users have experienced issues using CUDA 11 or higher. Please try using CUDA 10.2 if you run into CUDA issues.
 

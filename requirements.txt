@@ -1,0 +1,9 @@
+matplotlib
+opencv-python
+plyfile
+trimesh==2.35.39
+networkx==2.2
+scipy
+pytorch_pretrained_bert==0.6.2
+tensorboard
+tensorboardX
