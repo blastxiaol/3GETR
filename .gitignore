@@ -1,7 +1,7 @@
 *.swp
 **/__pycache__/**
 third_party/pointnet2
-data/
+data
 
 # generated files
 utils/box_intersection.c
